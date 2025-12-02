@@ -1,4 +1,4 @@
-/* --- Styles généraux --- */
+/* --- Variables de couleurs --- */
 :root {
     --primary-color: #1E2A38;
     --secondary-color: #007BFF;
@@ -7,6 +7,7 @@
     --accent-color: #00BFFF;
 }
 
+/* --- Styles globaux --- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -34,7 +35,6 @@ header {
     background-color: var(--primary-color);
     text-align: center;
     padding: 60px 20px;
-    position: relative;
 }
 
 header img {
@@ -64,7 +64,6 @@ nav {
     padding: 15px 20px;
     display: flex;
     justify-content: center;
-    z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
 
@@ -111,27 +110,28 @@ section h2 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;  /* centre horizontalement */
+    align-items: center;      /* centre verticalement */
 }
 
 .vignette {
-    flex: 1 1 200px;
+    width: 333px;
+    height: 78.14px;
     background-color: var(--secondary-color);
     color: white;
-    padding: 25px;
-    text-align: center;
     border-radius: 10px;
     cursor: pointer;
     font-weight: bold;
     font-size: 1.1em;
     transition: transform 0.3s, background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: none;
+    padding: 0;
 }
 
-.vignette:hover {
-    transform: translateY(-5px);
-    background-color: var(--accent-color);
-}
-
-/* --- Formulaire --- */
+/* --- Formulaire de contact --- */
 form input, form textarea {
     width: 100%;
     padding: 12px;
