@@ -1,0 +1,171 @@
+/* --- Styles généraux --- */
+:root {
+    --primary-color: #1E2A38;
+    --secondary-color: #007BFF;
+    --bg-color: #121212;
+    --text-color: #E0E0E0;
+    --accent-color: #00BFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- Header --- */
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border: 3px solid var(--secondary-color);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header h3 {
+    font-weight: normal;
+    color: var(--accent-color);
+}
+
+/* --- Navigation --- */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: var(--primary-color);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+nav a {
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* --- Sections --- */
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #1E1E1E;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+section h2 {
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}
+
+/* --- Timeline --- */
+.timeline {
+    border-left: 3px solid var(--secondary-color);
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.timeline div {
+    margin-bottom: 20px;
+}
+
+/* --- Vignettes --- */
+.vignettes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.vignette {
+    flex: 1 1 200px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.vignette:hover {
+    transform: translateY(-5px);
+    background-color: var(--accent-color);
+}
+
+/* --- Formulaire --- */
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: var(--text-color);
+}
+
+form button {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: var(--accent-color);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .vignettes {
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: column;
+    }
+    nav a {
+        margin: 10px 0;
+    }
+}
