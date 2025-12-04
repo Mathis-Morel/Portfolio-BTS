@@ -6,17 +6,30 @@
 <title>Portfolio - Morel-Malgogne Mathis</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="theme-dark">
+
+<!-- Loader -->
+<div id="loader" class="loader">
+    <div class="loader-inner"></div>
+</div>
 
 <!-- Header -->
 <header>
-    <img src="images/photo.jpg" alt="Photo Mathis">
-    <h1>Morel-Malgogne Mathis</h1>
-    <h3>Étudiant en informatique - Systèmes et réseaux (SISR)</h3>
+    <div class="header-inner">
+        <img src="images/photo.jpg" alt="Photo Mathis" id="profilePhoto">
+        <div class="title-group">
+            <h1>Morel-Malgogne Mathis</h1>
+            <h3>Étudiant en informatique - Systèmes et réseaux (SISR)</h3>
+        </div>
+    </div>
+    <div class="header-actions">
+        <button id="themeToggle" aria-label="Toggle theme">☀/🌙</button>
+        <button id="scrollDown" aria-label="Scroll down">↓</button>
+    </div>
 </header>
 
 <!-- Navigation -->
-<nav>
+<nav id="mainNav">
     <a href="#presentation">Présentation</a>
     <a href="#parcours">Parcours</a>
     <a href="#formation">Formation</a>
@@ -28,29 +41,36 @@
     <a href="#contact">Contact</a>
 </nav>
 
+<main>
 <!-- Présentation -->
-<section id="presentation">
+<section id="presentation" class="card">
     <h2>Présentation personnelle</h2>
-    <p>Après un Bac Pro MELEC, j’ai choisi le BTS SIO option SISR pour approfondir mes compétences en administration réseau et en systèmes informatiques. Je suis motivé par le fonctionnement des infrastructures IT et je souhaite développer mes connaissances pratiques afin de devenir administrateur réseau. Mon objectif est de contribuer à la sécurisation et à l’optimisation des systèmes informatiques dans des environnements professionnels.</p>
+    <p>Après un Bac Pro MELEC, j’ai choisi le BTS SIO option SISR pour approfondir mes compétences en administration réseau et systèmes informatiques. Motivé par le fonctionnement des infrastructures IT, je souhaite devenir administrateur réseau et contribuer à la sécurisation et optimisation des systèmes.</p>
 </section>
 
 <!-- Parcours -->
-<section id="parcours">
+<section id="parcours" class="card">
     <h2>Historique du parcours</h2>
     <div class="timeline">
-        <div><strong>2022 - 2025 :</strong> Bac Pro MELEC</div>
-        <div><strong>2025 - 2027 :</strong> BTS SIO, option SISR</div>
+        <div class="timeline-item">
+            <div class="timeline-date">2022 - 2025</div>
+            <div class="timeline-content"><strong>Bac Pro MELEC</strong><p>Formation technique axée électricité et électrotechnique.</p></div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-date">2025 - 2027</div>
+            <div class="timeline-content"><strong>BTS SIO, option SISR</strong><p>Administration réseau, serveurs, sécurité.</p></div>
+        </div>
     </div>
 </section>
 
 <!-- Formation -->
-<section id="formation">
+<section id="formation" class="card">
     <h2>Formation actuelle</h2>
-    <p>Le BTS SIO option SISR se concentre sur la configuration et la maintenance des réseaux et serveurs, la sécurité informatique, la virtualisation, ainsi que la gestion de projets informatiques. Cette formation permet d’acquérir les compétences nécessaires pour administrer des infrastructures réseau et garantir leur bon fonctionnement.</p>
+    <p>Le BTS SIO option SISR se concentre sur la configuration et la maintenance des réseaux et serveurs, la sécurité informatique, la virtualisation, ainsi que la gestion de projets. Cette formation permet d’acquérir les compétences pour administrer et sécuriser les infrastructures IT.</p>
 </section>
 
 <!-- Métiers -->
-<section id="metiers">
+<section id="metiers" class="card">
     <h2>Métiers recherchés</h2>
     <ul>
         <li>Administrateur réseau → <a href="#">Carte heuristique</a></li>
@@ -60,72 +80,87 @@
 </section>
 
 <!-- Compétences -->
-<section id="competences">
-    <h2>Compétences de 1re année (SISR)</h2>
-    <ul>
-        <li><strong>Gestion de parc :</strong> OCS Inventory, GLPI</li>
-        <li><strong>Support utilisateurs :</strong> GLPI</li>
-        <li><strong>Réseau :</strong> configuration switch/routeur Cisco en CLI</li>
-        <li><strong>Système et réseau :</strong>
-            <ul>
-                <li>Installation/configuration Windows, Debian, Ubuntu</li>
-                <li>Gestion comptes, groupes et GPO AD</li>
-                <li>Services impression/sauvegarde : Microsoft Windows Server</li>
-                <li>Installation Apache 2 et MariaDB sur Debian</li>
-            </ul>
-        </li>
-    </ul>
+<section id="competences" class="card">
+    <h2>Compétences SISR</h2>
+    <div class="skills-grid">
+        <div class="skill">
+            <div class="skill-title">Gestion de parc</div>
+            <div class="skill-bar" data-level="85"><span></span></div>
+            <div class="skill-meta">OCS Inventory, GLPI</div>
+        </div>
+        <div class="skill">
+            <div class="skill-title">Support utilisateurs</div>
+            <div class="skill-bar" data-level="80"><span></span></div>
+            <div class="skill-meta">GLPI</div>
+        </div>
+        <div class="skill">
+            <div class="skill-title">Réseau</div>
+            <div class="skill-bar" data-level="75"><span></span></div>
+            <div class="skill-meta">Cisco CLI</div>
+        </div>
+        <div class="skill">
+            <div class="skill-title">Systèmes & Serveurs</div>
+            <div class="skill-bar" data-level="78"><span></span></div>
+            <div class="skill-meta">Windows, Debian, Apache, MariaDB</div>
+        </div>
+    </div>
 </section>
 
 <!-- Réalisations -->
-<section id="realisations">
+<section id="realisations" class="card">
     <h2>Réalisations</h2>
     <div class="vignettes">
-        <a href="stage.html"><div class="vignette">Stage</div></a>
-        <a href="atelier2.html"><div class="vignette">Atelier 2</div></a>
+        <a href="stage.html" class="vignette">
+            <div class="vignette-inner">
+                <div class="vignette-title">Stage</div>
+                <div class="vignette-sub">En cours de réalisation</div>
+            </div>
+        </a>
+        <a href="atelier2.html" class="vignette">
+            <div class="vignette-inner">
+                <div class="vignette-title">Atelier 2</div>
+                <div class="vignette-sub">En cours de réalisation</div>
+            </div>
+        </a>
     </div>
 </section>
 
 <!-- CV -->
-<section id="cv">
+<section id="cv" class="card">
     <h2>CV téléchargeable</h2>
-    <p><a href="cv.pdf" target="_blank">Télécharger mon CV (PDF)</a></p>
+    <p><a href="cv.pdf" target="_blank" rel="noopener">Télécharger mon CV (PDF)</a></p>
 </section>
 
 <!-- Veille -->
-<section id="veille">
+<section id="veille" class="card">
     <h2>Veille informationnelle</h2>
-    <p><strong>Dispositifs :</strong> Alertes Google, flux RSS, newsletters spécialisées</p>
+    <p><strong>Dispositifs:</strong> Alertes Google, flux RSS, newsletters spécialisées</p>
     <ul>
-        <li><strong>Cybersécurité :</strong> suivi des nouvelles menaces et vulnérabilités</li>
-        <li><strong>Nouvelles technologies réseau :</strong> évolutions en administration et sécurité des infrastructures</li>
+        <li><strong>Cybersécurité:</strong> suivi des nouvelles menaces et vulnérabilités</li>
+        <li><strong>Nouvelles technologies réseau:</strong> évolutions en administration et sécurité</li>
     </ul>
 </section>
 
 <!-- Contact -->
-<section id="contact">
+<section id="contact" class="card">
     <h2>Contact</h2>
-    <form action="https://formspree.io/f/xnnevbak" method="POST">
-   	<input type="text" name="nom" placeholder="Nom" required>
-   	<input type="text" name="prenom" placeholder="Prénom" required>
-    	<input type="email" name="email" placeholder="Email" required>
-    	<textarea name="message" rows="5" placeholder="Votre message" required></textarea>
-	<button type="submit">Envoyer</button>
+    <form id="contactForm" action="https://formspree.io/f/xnnevbak" method="POST">
+        <div class="form-row">
+            <input type="text" name="nom" placeholder="Nom" required>
+            <input type="text" name="prenom" placeholder="Prénom" required>
+        </div>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+        <div class="form-actions">
+            <button type="submit">Envoyer</button>
+        </div>
     </form>
 </section>
+</main>
 
-    <script>
-        document.querySelectorAll('nav a').forEach(link => {
-            link.addEventListener('click', e => {
-                e.preventDefault();
-                const target = document.querySelector(link.getAttribute('href'));
-                window.scrollTo({
-                    top: target.offsetTop - window.innerHeight / 2 + target.offsetHeight / 2,
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
-
-</body>
-</html>
+<!-- Confirmation modal -->
+<div id="confirmModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+        <button class="modal-close" id="modalClose">×</button>
+        <h3>Message envoyé ✔</h3>
+        <p>Merci, je vous répondrai rapide
