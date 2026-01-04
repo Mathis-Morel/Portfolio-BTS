@@ -3,32 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio - Morel-Malgogne Mathis</title>
+<title>Portfolio - Morel--Malgogne Mathis</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body class="theme-dark">
 
-<!-- Loader -->
-<div id="loader" class="loader">
-    <div class="loader-inner"></div>
-</div>
+<div id="loader" class="loader"><div class="loader-inner"></div></div>
+<div id="progressBar" class="progress-bar"></div>
 
-<!-- Header -->
 <header>
     <div class="header-inner">
         <img src="images/photo.jpg" alt="Photo Mathis" id="profilePhoto">
         <div class="title-group">
-            <h1>Morel-Malgogne Mathis</h1>
+            <h1>Morel--Malgogne Mathis</h1>
             <h3>Étudiant en informatique - Systèmes et réseaux (SISR)</h3>
         </div>
     </div>
     <div class="header-actions">
         <button id="themeToggle" aria-label="Toggle theme">☀/🌙</button>
-        <button id="scrollDown" aria-label="Scroll down">↓</button>
     </div>
 </header>
 
-<!-- Navigation -->
 <nav id="mainNav">
     <a href="#presentation">Présentation</a>
     <a href="#parcours">Parcours</a>
@@ -42,71 +37,65 @@
 </nav>
 
 <main>
-<!-- Présentation -->
 <section id="presentation" class="card">
     <h2>Présentation personnelle</h2>
-    <p>Après un Bac Pro MELEC, j’ai choisi le BTS SIO option SISR pour approfondir mes compétences en administration réseau et systèmes informatiques. Motivé par le fonctionnement des infrastructures IT, je souhaite devenir administrateur réseau et contribuer à la sécurisation et optimisation des systèmes.</p>
+    <p>Après un Bac Pro MELEC, j’ai choisi le BTS SIO option SISR pour approfondir mes compétences en administration réseau et en systèmes informatiques. Je suis motivé par le fonctionnement des infrastructures IT et je souhaite développer mes connaissances pratiques afin de devenir administrateur réseau. Mon objectif est de contribuer à la sécurisation et à l’optimisation des systèmes informatiques dans des environnements professionnels.</p>
 </section>
 
-<!-- Parcours -->
 <section id="parcours" class="card">
     <h2>Historique du parcours</h2>
     <div class="timeline">
         <div class="timeline-item">
             <div class="timeline-date">2022 - 2025</div>
-            <div class="timeline-content"><strong>Bac Pro MELEC</strong><p>Formation technique axée électricité et électrotechnique.</p></div>
+            <div class="timeline-content"><strong>Bac Pro MELEC</strong>
+                <p>MELEC: Métiers de l’Électricité et de ses Environnements Connectées.</p>
+                <p><em>(Installation/Maintenance/Réparation de système électrique.)</em></p>
+            </div>
         </div>
         <div class="timeline-item">
             <div class="timeline-date">2025 - 2027</div>
-            <div class="timeline-content"><strong>BTS SIO, option SISR</strong><p>Administration réseau, serveurs, sécurité.</p></div>
+            <div class="timeline-content"><strong>BTS SIO, option SISR</strong>
+                <p>SIO: Services informatiques aux Organisations/SISR: Solutions d’Infrastructure Systèmes et Réseaux</p>
+                <p><em>(Administration/Configuration/Maintenance des réseaux informatiques.)</em></p>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Formation -->
 <section id="formation" class="card">
     <h2>Formation actuelle</h2>
-    <p>Le BTS SIO option SISR se concentre sur la configuration et la maintenance des réseaux et serveurs, la sécurité informatique, la virtualisation, ainsi que la gestion de projets. Cette formation permet d’acquérir les compétences pour administrer et sécuriser les infrastructures IT.</p>
+    <p>Le BTS SIO option SISR se concentre sur la configuration et la maintenance des réseaux et serveurs, la sécurité informatique, la virtualisation, ainsi que la gestion de projets informatiques. Cette formation permet d’acquérir les compétences nécessaires pour administrer des infrastructures réseau et garantir leur bon fonctionnement.</p>
 </section>
 
-<!-- Métiers -->
 <section id="metiers" class="card">
     <h2>Métiers recherchés</h2>
     <ul>
-        <li>Administrateur réseau → <a href="#">Carte heuristique</a></li>
+        <li>Administrateur réseau → <a href="images/Carte_Heuristique.png">Carte heuristique</a></li>
         <li>Technicien systèmes et réseaux</li>
         <li>Consultant en cybersécurité</li>
     </ul>
 </section>
 
-<!-- Compétences -->
 <section id="competences" class="card">
-    <h2>Compétences SISR</h2>
-    <div class="skills-grid">
-        <div class="skill">
-            <div class="skill-title">Gestion de parc</div>
-            <div class="skill-bar" data-level="85"><span></span></div>
-            <div class="skill-meta">OCS Inventory, GLPI</div>
-        </div>
-        <div class="skill">
-            <div class="skill-title">Support utilisateurs</div>
-            <div class="skill-bar" data-level="80"><span></span></div>
-            <div class="skill-meta">GLPI</div>
-        </div>
-        <div class="skill">
-            <div class="skill-title">Réseau</div>
-            <div class="skill-bar" data-level="75"><span></span></div>
-            <div class="skill-meta">Cisco CLI</div>
-        </div>
-        <div class="skill">
-            <div class="skill-title">Systèmes & Serveurs</div>
-            <div class="skill-bar" data-level="78"><span></span></div>
-            <div class="skill-meta">Windows, Debian, Apache, MariaDB</div>
-        </div>
-    </div>
+    <h2>Compétences de 1re année (SISR)</h2>
+    <p><em>Compétences en cours d'acquisition:</em></p>
+    <ul>
+        <li><strong>Gestion de parc:</strong> OCS Inventory, GLPI</li>
+        <li><strong>Support aux utilisateurs et gestion des tickets d’incident:</strong> GLPI</li>
+        <li><strong>Réseau:</strong> configuration de switch/commutateur et de routeur Cisco en CLI</li>
+        <li><strong>Système et réseau:</strong>
+            <ul>
+                <li>Installation et configuration de base d’OS: Windows, Debian, Ubuntu</li>
+                <li>Gestion des comptes et groupes utilisateurs locaux: Windows 11, Debian, Ubuntu Desktop</li>
+                <li>Gestion des comptes, groupes et GPO dans un domaine Active Directory</li>
+                <li>Gestion des services d’impression et de sauvegarde: Microsoft Windows Server</li>
+                <li>Installation du service Web: Apache 2 (Debian)</li>
+                <li>Installation de base de données: MariaDB (Debian)</li>
+            </ul>
+        </li>
+    </ul>
 </section>
 
-<!-- Réalisations -->
 <section id="realisations" class="card">
     <h2>Réalisations</h2>
     <div class="vignettes">
@@ -125,23 +114,23 @@
     </div>
 </section>
 
-<!-- CV -->
 <section id="cv" class="card">
     <h2>CV téléchargeable</h2>
     <p><a href="cv.pdf" target="_blank" rel="noopener">Télécharger mon CV (PDF)</a></p>
 </section>
 
-<!-- Veille -->
 <section id="veille" class="card">
     <h2>Veille informationnelle</h2>
-    <p><strong>Dispositifs:</strong> Alertes Google, flux RSS, newsletters spécialisées</p>
-    <ul>
-        <li><strong>Cybersécurité:</strong> suivi des nouvelles menaces et vulnérabilités</li>
-        <li><strong>Nouvelles technologies réseau:</strong> évolutions en administration et sécurité</li>
-    </ul>
+    <div class="vignettes">
+        <a href="veille.html" class="vignette">
+            <div class="vignette-inner">
+                <div class="vignette-title">Veille</div>
+                <div class="vignette-sub">Surveillance et thèmes SISR</div>
+            </div>
+        </a>
+    </div>
 </section>
 
-<!-- Contact -->
 <section id="contact" class="card">
     <h2>Contact</h2>
     <form id="contactForm" action="https://formspree.io/f/xnnevbak" method="POST">
@@ -156,11 +145,17 @@
         </div>
     </form>
 </section>
-</main>
 
-<!-- Confirmation modal -->
 <div id="confirmModal" class="modal" aria-hidden="true">
     <div class="modal-content">
         <button class="modal-close" id="modalClose">×</button>
         <h3>Message envoyé ✔</h3>
-        <p>Merci, je vous répondrai rapide
+        <p>Merci, je vous répondrai rapidement.</p>
+        <button id="modalOk">OK</button>
+    </div>
+</div>
+
+<button id="backToTop" title="Haut">↑</button>
+<script src="main.js"></script>
+</body>
+</html>

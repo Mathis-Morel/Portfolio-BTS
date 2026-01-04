@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veille informationnelle - Morel--Malgogne Mathis</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-dark">
+
+<div id="loader" class="loader"><div class="loader-inner"></div></div>
+<div id="progressBar" class="progress-bar"></div>
+
+<header>
+    <div class="header-inner">
+        <img src="images/photo.jpg" alt="Photo Mathis" id="profilePhoto">
+        <div class="title-group">
+            <h1>Morel--Malgogne Mathis</h1>
+            <h3>Étudiant en informatique - Systèmes et réseaux (SISR)</h3>
+        </div>
+    </div>
+    <div class="header-actions">
+        <button id="themeToggle" aria-label="Toggle theme">☀/🌙</button>
+    </div>
+</header>
+
+<nav id="mainNav">
+    <a href="index.html">Accueil</a>
+    <a href="#presentation">Présentation</a>
+    <a href="#veille-cybersecurite">Veille - Cybersécurité</a>
+    <a href="#veille-reseau">Veille - Nouvelles technologies réseau</a>
+</nav>
+
+<main>
+<section class="card" id="presentation">
+    <h2>Veille informationnelle</h2>
+    <ul>
+        <li><h3>Une veille informationnelle, c'est quoi ?</h3>
+            <ul><li>Surveiller de manière organisée des sources pour rester informé des évolutions et menaces.</li></ul>
+        </li>
+        <li><h3>Dispositifs utilisés :</h3>
+            <ul>
+                <li><strong>Alertes Google:</strong> alertes sur mots-clés.</li>
+                <li><strong>Flux RSS:</strong> centralisation des articles.</li>
+                <li><strong>Newsletters spécialisées:</strong> recevoir tendances et infos.</li>
+            </ul>
+        </li>
+        <li><h3>Thèmes surveillés :</h3>
+            <ul>
+                <li><h4><a href="#" class="theme-link" data-theme="cybersecurite">1. Cybersécurité</a></h4>
+                    <p>Suivi des nouvelles menaces et vulnérabilités.</p>
+                </li>
+                <li><h4><a href="#" class="theme-link" data-theme="reseau">2. Nouvelles technologies réseau</a></h4>
+                    <p>Suivi des évolutions en administration et sécurité des infrastructures.</p>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+<section class="card" id="mes-articles">
+    <h2>Mes articles</h2>
+    <div class="filters">
+        <input type="text" id="searchInput" placeholder="Rechercher par mots-clés...">
+        <label for="themeSelect">Filtrer par thème :</label>
+        <select id="themeSelect">
+            <option value="all">Tout</option>
+            <option value="cybersecurite">Cybersécurité</option>
+            <option value="reseau">Nouvelles technologies réseau</option>
+        </select>
+    </div>
+
+    <div class="articles_veille" id="articlesContainer">
+
+
+<!% Article 1 %>
+<article class="article-card" data-theme="cybersecurite">
+    <img src="https://i.imgur.com/9ZrHfWv.png" alt="Vulnérabilité Microsoft Exchange 2025" class="article-image">
+    <div class="article-content">
+        <h3>Vulnérabilité critique dans Microsoft Exchange Server</h3>
+        <p>La faille CVE‑2025‑53786 affecte Exchange Server 2016, 2019 et Subscription Edition, permettant l’élévation de privilèges. Des centaines de serveurs restent vulnérables malgré la disponibilité du correctif.</p>
+        <div class="article-footer">
+            <span class="article-date">2025‑08‑07</span>
+            <span>CERT-FR</span>
+        </div>
+    <a href="https://www.cert.ssi.gouv.fr/avis/CERTFR-2025-AVI-0659/" target="_blank" class="btn-primary">Plus d'informations</a>
+    </div>
+</article>
+
+
+<!% Article 2 %>
+<article class="article-card" data-theme="cybersecurite">
+    <img src="https://www.it-connect.fr/wp-content-itc/uploads/2025/10/Microsoft-Patch-Tuesday-Octobre-2025.jpg.webp" alt="Patch Tuesday Microsoft octobre 2025" class="article-image">
+    <div class="article-content">
+        <h3>Patch Tuesday – Octobre 2025 : 172 failles corrigées</h3>
+        <p>Microsoft corrige 172 vulnérabilités sur Windows, Azure et Office, incluant 6 zero‑day. Mise à jour cruciale pour sécuriser les environnements professionnels.</p>
+        <div class="article-footer">
+            <span class="article-date">2025‑10‑14</span>
+            <span>It‑Connect</span>
+        </div>
+    <a href="https://www.it-connect.fr/patch-tuesday-octobre-2025-172-failles-de-securite-corrigees-dont-6-zero-day/" target="_blank" class="btn-primary">Plus d'informations</a>
+    </div>
+</article>
+
+
+<!% Article 3 %>
+<article class="article-card" data-theme="reseau">
+    <img src="https://www.choisir.com/medias/d9f47729-boxinternet-wifi7-201125.jpg" alt="Wi‑Fi 7 2025" class="article-image">
+    <div class="article-content">
+        <h3>Wi-Fi 7 enfin déployé : gains et impacts pour les entreprises</h3>
+        <p>La norme Wi‑Fi 7 offre des débits plus élevés, une latence réduite et une meilleure gestion des connexions multiples, idéal pour PME et environnements professionnels.</p>
+        <div class="article-footer">
+            <span class="article-date">2025‑11‑20</span>
+            <span>Choisir.com</span>
+        </div>
+        <a href="https://www.choisir.com/box-internet/articles/216482/arrivee-du-wi-fi-7-en-2025-ou-en-sommes-nous-vraiment?utm_source=chatgpt.com" target="_blank" class="btn-primary">Plus d'informations</a>
+    </div>
+</article>
+
+
+<!% Article 4 %>
+<article class="article-card" data-theme="cybersecurite">
+    <img src="https://www.lemagit.fr/visuals/LeMagIT/hero_article/Cyberattack-hacked-hero.jpg" alt="Cyberhebdo 5 décembre 2025" class="article-image">
+    <div class="article-content">
+        <h3>Cyberhebdo 5 décembre 2025 : attaques dans 7 pays</h3>
+        <p>La revue hebdomadaire recense sept cyberattaques majeures survenues récemment à l’international, rappelant la menace persistante et globale.</p>
+        <div class="article-footer">
+            <span class="article-date">2025‑12‑05</span>
+            <span>LeMagIT</span>
+        </div>
+        <a href="https://www.lemagit.fr/actualites/366636032/Cyberhebdo-du-5-decembre-2025-des-organisations-affectees-dans-au-moins-7-pays" target="_blank" class="btn-primary">Plus d'informations</a>
+    </div>
+</article>
+
+
+<!% Article 5 %>
+<article class="article-card" data-theme="reseau">
+    <img src="https://i.imgur.com/sMbSJuC.jpeg" alt="Croissance WLAN entreprise 2025" class="article-image">
+    <div class="article-content">
+        <h3>Marché WLAN en forte croissance au 2ᵉ trimestre 2025</h3>
+        <p>Les solutions sans fil en entreprise accélèrent grâce au Wi‑Fi 7, le marché WLAN affichant une croissance de +13,2 % sur le trimestre.</p>
+        <div class="article-footer">
+            <span class="article-date">2025‑09‑12</span>
+            <span>InfoDSI / Apo’g</span>
+        </div>
+        <a href="https://infodsi.com/articles/207157/le-wi-fi-dentreprise-en-pleine-expansion-le-marche-wlan-croit-de-13,2-au-2e-trimestre-2025.html" target="_blank" class="btn-primary">Plus d'informations</a>
+    </div>
+</article>
+
+
+<!% Article 6 %>
+<article class="article-card" data-theme="cybersecurite">
+    <img src="https://i.imgur.com/vYxFdSf.png" alt="Cyberattaque OFII 2026" class="article-image">
+    <div class="article-content">
+        <h3>Cyberattaque de l’OFII :plus de 2 millions de données exposées</h3>
+        <p>Une attaque informatique majeure a touché l’Office Français de l’Immigration et de l’Intégration. Des données personnelles sensibles ont été compromises, mettant en évidence les failles persistantes dans les systèmes publics.</p>
+        <div class="article-footer">
+            <span class="article-date">2026-01-04</span>
+            <span>Infos-IT</span>
+        </div>
+        <a href="https://infos-it.fr/nouvelles/8067/piratage-massif-de-lofii-2-millions-de-donnees-personnelles-exposees-en-2026/" target="_blank" class="btn-primary">Plus d'informations</a>
+    </div>
+</article>
+
+
+<!% Article 7 %>
+<article class="article-card" data-theme="cybersecurite">
+    <img src="https://i.imgur.com/k9IsvB4.png" alt="Sécurité portefeuilles crypto" class="article-image">
+    <div class="article-content">
+        <h3>Portefeuilles crypto :Trust Wallet face à plusieurs failles de sécurité</h3>
+        <p>Trust Wallet a été confronté à plusieurs vulnérabilités et attaques ciblées. Ces incidents relancent les inquiétudes sur la sécurité des portefeuilles numériques et la protection des actifs des utilisateurs.</p>
+        <div class="article-footer">
+            <span class="article-date">2026-01-03</span>
+            <span>Europe-Infos</span>
+        </div>
+        <a href="https://www.europe-infos.fr/cyberattaque/7374/trust-wallet-confronte-a-la-tempete-piratages-bugs-et-questions-de-securite" target="_blank" class="btn-primary">Plus d'informations</a>
+    </div>
+</article>
+
+
+<!% Article 8 %>
+<article class="article-card" data-theme="reseau">
+    <img src="https://i.imgur.com/7PuvQOw.jpeg" alt="Fin 2G 3G France" class="article-image">
+    <div class="article-content">
+        <h3>Fin des réseaux 2G et 3G en France :ce qui change en 2026</h3>
+        <p>L’extinction progressive des réseaux mobiles 2G et 3G est prévue pour 2026. Cette transition vise à libérer des fréquences pour la 4G et la 5G, tout en améliorant les performances réseau.</p>
+        <div class="article-footer">
+            <span class="article-date">2025-10-16</span>
+            <span>ARCEP</span>
+        </div>
+        <a href="https://www.arcep.fr/mes-demarches-et-services/consommateurs/fiches-pratiques/extinction-reseaux-mobiles-2g-3g.html" target="_blank" class="btn-primary">Plus d'informations</a>
+    </div>
+</article>
+
+
+<!% Article 9 %>
+<article class="article-card" data-theme="reseau">
+    <img src="https://i.imgur.com/U4NDLBe.png" alt="Couverture fibre France 2026" class="article-image">
+    <div class="article-content">
+        <h3>Fibre optique en France :plus de 92 % des foyers éligibles</h3>
+        <p>La couverture fibre continue de progresser sur le territoire français. Début 2026, plus de 92 % des foyers peuvent accéder au très haut débit, réduisant la fracture numérique.</p>
+        <div class="article-footer">
+            <span class="article-date">2025-12-18</span>
+            <span>Selectra</span>
+        </div>
+        <a href="https://selectra.info/telecom/guides/comprendre/couverture-fibre" target="_blank" class="btn-primary">Plus d'informations</a>
+    </div>
+</article>
+
+
+<!% Article 10 %>
+<article class="article-card" data-theme="reseau">
+    <img src="https://www.zdnet.fr/wp-content/uploads/zdnet/2024/02/6G20A-750x410.jpg" alt="IA et réseaux 6G Samsung" class="article-image">
+    <div class="article-content">
+        <h3>Quand l’IA réinvente les réseaux : Samsung dévoile ses avancées pour la 6G</h3>
+        <p>Samsung intègre l’intelligence artificielle au cœur des futurs réseaux 6G afin d’optimiser automatiquement la gestion du spectre, la performance et l’efficacité énergétique. Cette approche permet de créer des réseaux plus intelligents, autonomes et adaptés aux usages de demain.</p>
+        <div class="article-footer">
+            <span class="article-date">2025-11-14</span>
+            <span>ZDNet France</span>
+        </div>
+        <a href="https://www.zdnet.fr/actualites/quand-lia-reinvente-les-reseaux-samsung-devoile-ses-avancees-dans-la-6g-484906.htm?utm_source=chatgpt.com" target="_blank" class="btn-primary">Plus d'informations</a>
+    </div>
+</article>
+
+
+
+    </div>
+</section>
+</main>
+
+<button id="backToTop" title="Haut">↑</button>
+<script src="main.js"></script>
+</body>
+</html>

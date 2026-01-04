@@ -1,0 +1,13 @@
+        <-- Article X -->
+        <article class="article-card" data-theme="reseau/cybersecurite">
+            <img src="LIEN IMAGE" alt="DESCRITION IMAGE" class="article-image">
+            <div class="article-content">
+                <h3>TITRE</h3>
+                <p>RESUMER</p>
+                <div class="article-footer">
+                    <span class="article-date">‑DATE‑</span>
+                    <span>NOM DU SITE</span>
+                </div>
+                <a href="ADRESSE SITE" target="_blank" class="btn-primary">Plus d'informations</a>
+            </div>
+        </article>
